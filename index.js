@@ -148,6 +148,8 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
   
+  const key = parseInt(e.which)
+  
   if(e.which === LEFT_ARROW) {
     moveDodgerLeft();
     e.stopPropagation;
