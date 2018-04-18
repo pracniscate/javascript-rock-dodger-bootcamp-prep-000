@@ -128,7 +128,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  ROCKS.for each (variable in object) {
+  ROCKS.for each (function(rock) in object) {
   statement
 }
 }
