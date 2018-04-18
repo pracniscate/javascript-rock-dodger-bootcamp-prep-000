@@ -129,9 +129,9 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
   
-  /*  */
+  /* The for...of statement creates a loop iterating over iterable objects (including the built-in String, Array, e.g. the Array-like arguments or NodeList objects, TypedArray, Map and Set, and user-defined iterables), invoking a custom iteration hook with statements to be executed for the value of each distinct property of the object. */
     
-  ROCKS.for each (function(rock) { rock.remove() })
+  ROCKS.for (function(rock) { rock.remove() });
 }
 
 function moveDodger(e) {
