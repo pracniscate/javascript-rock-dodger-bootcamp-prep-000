@@ -138,6 +138,29 @@ function endGame() {
   alert("YOU LOSE!");
 }
 
+function moveDodger(e) {
+  // implement me!
+  /**
+   * This function should call `moveDodgerLeft()`
+   * if the left arrow is pressed and `moveDodgerRight()`
+   * if the right arrow is pressed. (Check the constants
+   * we've declared for you above.)
+   * And be sure to use the functions declared below!
+   */
+  
+  const key = parseInt(e.detail || e.which);
+  
+  if(key === LEFT_ARROW) {
+    moveDodgerLeft();
+    e.stopPropagation;
+    e.preventDefault;
+  } else if(key === RIGHT_ARROW) {
+      moveDodgerRight();
+      e.stopPropagation;
+      e.preventDefault;
+  }
+}
+
 function moveDodgerLeft() {
   // implement me!
   /**
@@ -165,29 +188,6 @@ function moveDodgerRight() {
   if (right < 360) {
     DODGER.style.left = `${left+=4}px`;
     window.requestAnimationFrame(moveDodgerRight);
-  }
-}
-
-function moveDodger(e) {
-  // implement me!
-  /**
-   * This function should call `moveDodgerLeft()`
-   * if the left arrow is pressed and `moveDodgerRight()`
-   * if the right arrow is pressed. (Check the constants
-   * we've declared for you above.)
-   * And be sure to use the functions declared below!
-   */
-  
-  const key = parseInt(e.detail || e.which);
-  
-  if(key === LEFT_ARROW) {
-    moveDodgerLeft();
-    e.stopPropagation;
-    e.preventDefault;
-  } else if(key === RIGHT_ARROW) {
-      moveDodgerRight();
-      e.stopPropagation;
-      e.preventDefault;
   }
 }
 
