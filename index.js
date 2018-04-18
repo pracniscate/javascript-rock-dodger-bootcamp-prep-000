@@ -148,7 +148,7 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
   
-  if  
+  if(e.which === )  
 
 }
 
