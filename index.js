@@ -133,8 +133,9 @@ function endGame() {
 
     Syntax
     for each (variable in object) {
-  statement
-} */
+      statement
+    } */
+    
   ROCKS.for each (function(rock) { }) {
   statement
 }
