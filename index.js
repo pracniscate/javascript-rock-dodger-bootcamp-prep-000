@@ -187,7 +187,8 @@ function moveDodgerRight() {
   let right = parseInt(rightNums, 10);
   
   if (right < 360) {
-    
+    DODGER.style.left = `${left+=4}px`;
+    window.requestAnimationFrame(moveDodgerRight);
   }
 }
 
