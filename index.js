@@ -87,7 +87,8 @@ function createRock(x) {
      * we should call endGame()
      */
     rock.style.top = `${top++2}px`;
-    if 
+    
+    if checkCollision()
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
