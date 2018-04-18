@@ -157,7 +157,7 @@ function moveDodger(e) {
   // animate moveDodgerRight function
   if (e.which === RIGHT_ARROW) {
     e.preventDefault();
-    moveDodgerRight();
+    moveDodgerLeft();
   }
 }
 
