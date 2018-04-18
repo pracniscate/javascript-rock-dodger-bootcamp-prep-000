@@ -136,7 +136,7 @@ function endGame() {
       statement
     } */
     
-  ROCKS.for each (function(rock) { rock.remove }) {
+  ROCKS.for each (function(rock) { rock.remove() }) {
   statement
 }
 }
