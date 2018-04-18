@@ -128,6 +128,13 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
+  
+  /* The for each...in statement iterates a specified variable over all values of object's properties. For each distinct property, a specified statement is executed.
+
+    Syntax
+    for each (variable in object) {
+  statement
+} */
   ROCKS.for each (function(rock) { }) {
   statement
 }
