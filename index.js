@@ -182,9 +182,9 @@ function moveDodgerRight() {
   var t = positionToInteger(DODGER.style.left);
   if (t < 360) {
     window.requestAnimationFrame(function() {
-      DODGER.style.left = `${t + 4}px`
-      })
-    }
+      DODGER.style.left = `${t + 4}px`;
+    });
+  }
 }
 
 /**
