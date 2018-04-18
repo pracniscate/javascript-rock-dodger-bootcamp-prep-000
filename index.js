@@ -148,7 +148,7 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
   
-  if(e.which === 37) {
+  if(e.which === 39) {
     moveDodgerLeft();
   } else if(e.which === RIGHT_ARROW) {
       moveDodgerRight();
